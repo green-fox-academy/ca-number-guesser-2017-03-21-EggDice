@@ -5,11 +5,11 @@ public class NumberGuesser {
   public static void main(String[] args) {
     double max = 4.;
     double min = 0.;
-    System.out.println("Please think a number between " + min + " and " + max + "!");
+    System.out.println("Please think a number between " + (int) min + " and " + (int) max + "!");
     double currentHalf = max / 2;
 
     while (min < max) {
-      System.out.println("Is your number under " + currentHalf + "? [y/n]");
+      System.out.println("Is your number under " + (int) currentHalf + "? [y/n]");
       Scanner scanner = new Scanner(System.in);
       String answer = scanner.nextLine();
       if (answer.equals("y")) {
@@ -20,7 +20,7 @@ public class NumberGuesser {
         currentHalf = Math.round((currentHalf + max) / 2);
       }
     }
-    System.out.println("Your number is: " + min);
+    System.out.println("Your number is: " + (int) min);
   }
 }
 
