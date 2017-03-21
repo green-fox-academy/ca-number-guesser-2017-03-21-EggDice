@@ -3,7 +3,7 @@ import java.lang.Math;
 
 public class NumberGuesser {
   public static void main(String[] args) {
-    double max = 4.;
+    double max = 5000.;
     double min = 0.;
     System.out.println("Please think a number between " + (int) min + " and " + (int) max + "!");
     double currentHalf = max / 2;
