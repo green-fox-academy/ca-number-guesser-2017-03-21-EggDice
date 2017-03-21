@@ -5,7 +5,7 @@ public class NumberGuesser {
   public static void main(String[] args) {
     double max = 4.;
     double min = 0.;
-    System.out.println("Please think a number between 0 and 4!");
+    System.out.println("Please think a number between " + min + " and " + max + "!");
     double currentHalf = max / 2;
 
     while (min < max) {
